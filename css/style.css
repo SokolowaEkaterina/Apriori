@@ -808,7 +808,7 @@ h1{
 	.box_ourfans_little p{
 		width: 100%;
 		text-align: center;
-		margin-top: 2%;
+		margin-top: 5%;
 		margin-bottom: 6%;
 	}
 	.box_ourfans{
@@ -1067,6 +1067,7 @@ h1{
 	.lobos_little{
 		margin-bottom: 5%;
 		width: 27%;
+		opacity: 25%;
 	}
 	@media screen and (max-width:768px){
 		.box_logos{
@@ -1081,6 +1082,7 @@ h1{
 			width: 50%;
 			text-align: center;
 			margin-bottom: 8%;
+			opacity: 25%;
 		}
 	}
 	@media screen and (max-width:375px){
@@ -1088,6 +1090,7 @@ h1{
 			width: 100%;
 			margin-bottom: 6%;
 			margin-top: 6%;
+			opacity: 25%;
 		}
 	}
 }
