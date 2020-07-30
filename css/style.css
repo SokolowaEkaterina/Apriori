@@ -817,6 +817,10 @@ h1{
 	@media screen and (max-width:426px){
 		.box_ourfans{
 			width: 100%;
+			margin-top: 11%;
+		}
+		.box_ourfans_little p{
+			margin-top: 8%;
 		}
 	}
 }
