@@ -64,7 +64,7 @@ legend {
 }
 
 body{
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	position: relative;
 	min-height: auto;
 	padding: 0;
@@ -694,6 +694,14 @@ h1{
 			padding-top: 25%; 
 		}	
 	}
+	@media screen and (max-width:320px){
+		.hover_news_smole{
+			padding-left: 40%
+		}
+		.box_little:hover{
+			padding-top: 30%; 
+		}
+	}
 }
 
 /*work/////////////////////////////////////////*/
@@ -800,6 +808,8 @@ h1{
 	.box_ourfans_little p{
 		width: 100%;
 		text-align: center;
+		margin-top: 2%;
+		margin-bottom: 6%;
 	}
 	.box_ourfans{
 		width: 90%;
@@ -922,6 +932,10 @@ h1{
 	.box_teams .box_teams_little:nth-child(4n){
 		margin-right: auto;
 	}
+	.box_teams_little:active .box_hover_teams{
+		opacity: 1;
+		padding-top: 45%;
+	}
 	@media screen and (max-width:375px){
 		.box_teams_little{
 			width: 65%;
@@ -978,7 +992,6 @@ h1{
 }
 
 .accordion-item--active .accordion-item-trigger{
-	
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
@@ -1082,7 +1095,13 @@ h1{
 .lobos_little:hover{
 	opacity: 100%;
 }
+.lobos_little:focus{
+	opacity: 100%;
+}
 
+.lobos_little:active{
+	opacity: 100%;
+}
 /*/join_our_newsletter//////////////////////////////*/
 .join_our_newsletter{
 	padding-top: 4%;
@@ -1488,6 +1507,7 @@ footer button:hover{
 //////////////////////////////////////////////////*/
 .blog{
 	padding-top: 2.87%;
+	padding-bottom: 3.5%;
 }
 
 .titel_02{
@@ -1505,49 +1525,50 @@ footer button:hover{
 }
 .slick-track{
 	display: flex;
+	align-items: flex-start;
 }
 .slider{
 	position: relative;
 }
 .slick-dots{
 	text-align: center;
-	margin-top: 3%;
-	background-color: #070623;
+	margin-top: 1.3%;
+	background-color: #f2f2f5;
 	height: 81px;
 	width: 100%;
 	z-index: -10;
 	padding-top: 30px;
 }
-.slick-dots li button{
+li button{
+	color: #3b3a52;
 	font-size: 16px;
-	color: #da1818;
 	font-weight: 600;
-	background: none;
 	border: none;
 	outline: none;
 	cursor: pointer;
 	opacity: 30%;
+	width: 1%;
+	background: none;
+	font-family: 'Montserrat';
 }
-.slick-dots li button.slick-active{
-	color: /*#3b3a52*/ #f2f2f5;
+.slick-active button{
 	opacity: 100%;
-	font-size: 20px;
 }
 
 .slick-arrow{
 	position: absolute;
-	bottom: .5%;
-	background-color: aqua;
+	bottom: 0%;
+	background-color: transparent;
 	font-size: 0;
 	border: 0;
-	width: 50px;
-	height: 50px;
+	width: 80px;
+	height: 81px;
 	outline: none;
 	cursor: pointer;
 	z-index: 20;
 }
 .slick-arrow.slick-prev{
-	left: 0;
+	left: 0%;
 	background-image: url(../img/blog/left.png);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1573,7 +1594,7 @@ footer button:hover{
 
 .blog .box_little_bigger{
 	width: 49%;
-	margin-bottom: 2%;
+	margin-bottom: 3%;
 	padding-top: 0;
 	position: relative;
 	background-size: cover;

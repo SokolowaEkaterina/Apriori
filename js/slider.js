@@ -1,5 +1,9 @@
 $(document).ready(function(){
     $('.slider').slick({
         dots:true,
+        slidesToShow:1,
+        draggable:false,
+        swipe:false,
+        infinite:true,
     });
 });
