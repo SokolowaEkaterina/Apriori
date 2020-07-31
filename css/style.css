@@ -1777,11 +1777,56 @@ li button{
 	background-image: url(../img/contact_us/3.png);
 }
 
+@media screen and (max-width:768px){
+	.contact_us{
+		padding-top: 15%;
+	}
+}
+@media screen and (max-width:670px){
+	.contact_01_box{
+		flex-wrap: wrap;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.contact_01_box_little{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 7%;
+	}
+	.email_befor_01::before,
+	.add_befor_01::before,
+	.tel_befor_01::before{
+		margin-bottom: 5%;
+	}
+	
+	@media screen and (max-width:426px){
+		.contact_us{
+			padding-top: 20%;
+			padding-bottom: 10%;
+		}
+	}
+}
 /*//iframe////////////////////////////////////////////*/
 iframe{
 	margin-top: 5.8%;
 	width: 100%;
 	height: 804px;
+}
+@media screen and (max-width:1440px){
+	iframe{
+		height: 700px;
+	}
+	@media screen and (max-width:1024px){
+		iframe{
+			height: 500px;
+		}
+	}
+	@media screen and (max-width:768px){
+		iframe{
+			height: 400px;
+		}
+	}
 }
 /*/contact_02////////////////////////////////////////////////////////*/
 .contact_02{
@@ -1830,7 +1875,7 @@ iframe{
 	display: block;
 	width: 40%;
 	height: 520px;
-	background-color: /*#f6f6f9*/ #cf0b7767;
+	background-color: #f6f6f9;
 	margin-top: 7%;
 	border-radius: 6px;
 }
@@ -1848,6 +1893,7 @@ iframe{
 	border: 2px solid #c7c7cf;
 	background: no-repeat;
 	font-size: 14px;
+	font-family:'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	letter-spacing: 0px;
 	color: #3b3a52;
 	font-weight: 500;
@@ -1857,8 +1903,16 @@ iframe{
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 3%;
+	outline: none;
+	transition: .3s;
 }
 
+.name:hover, .email:hover, .contact_forms textarea:hover,:focus{
+	border: 2px solid #3b3a52;
+}
+textarea:focus{
+	border: 2px solid #3b3a52;
+}
 .contact_forms textarea{
 	height: 81px;
 	padding-top: 3.5%;
@@ -1869,12 +1923,13 @@ iframe{
 	color: #ffffff;
 	border: 2px solid #3b3a52;
 }
+.contact_forms button:hover{
+	background: none;
+	color: #3b3a52;
+}
 
-.checkbox{
-	width: 28px;
-	height: 28px;
-	display: block;
-	margin-left: 15%;
+input[type="checkbox"]{
+	display: none;
 }
 
 label{
@@ -1882,9 +1937,95 @@ label{
 	display: block;
 	width: 55%;
 	margin-left: 24%;
-	margin-top: -5%;
+	margin-top: 5%;
+	position: relative;
+}
+
+label::before{
+	content: '';
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background-color: #e8e8ec;
+	position: absolute;
+	top: -10%;
+	margin-left: -15%;
+	margin-right: 5%;
+	border-radius: 4px;
+	transition: background-color .2s linear;
+}
+
+input[type="checkbox"]:checked + label::before {
+	background-color: #4cb677;
+	background-image: url(../img/contact_us/check.png);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .green{
 	color: #79c79a;
+}
+@media screen and (max-width:1024px){
+	.contact_02{
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	.contact_02_box{
+		width: 40%;
+	}
+	.contact_forms{
+		width: 50%;
+	}
+	@media screen and (max-width:768px){
+		label{
+			margin-left: 28%;
+		}
+		label::before{
+			margin-left: -22%;
+		}
+	}
+	@media screen and (max-width:426px){
+		.contact_02{
+			padding-right: 0%;
+			padding-left: 0%;
+			width: 100%;
+			flex-wrap: wrap;
+		}
+		.contact_forms{
+			width: 90%;
+			order: 1;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.contact_02_box{
+			width: 100%;
+			order: 2;
+		}
+		.contact_02_box_little img{
+			margin-left: auto;
+
+		}
+		.contact_02_box_little a, .add_before_02{
+			margin-right: auto;
+		}
+		.contact_title{
+			text-align: center;
+		}
+		@media screen and (max-width:375px){
+			label::before{
+				margin-top: 5%;
+			}
+			.name, .email, .contact_forms textarea, .contact_forms button{
+				margin-bottom: 6%;
+			}
+		}
+		@media screen and (max-width:320px){
+			label{
+				margin-left: 31%;
+			}
+			label::before{
+				margin-left: -28%;
+			}
+		}
+	}
 }
