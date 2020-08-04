@@ -2032,7 +2032,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 
-/*/!!!!!!-----CONTACT_US_PAGE-----!!!!!!//////
+/*/!!!!!!-----POST-----!!!!!!//////
 //////////////////////////////////////////////////*/
 .prevyou{
 	background-image: url(../img/post/1.png);
@@ -2041,7 +2041,6 @@ input[type="checkbox"]:checked + label::before {
 	background-position: center;
 	color: #fff;
 	font-weight: 600;
-	opacity: 50%;
 	text-align: center;
 	padding-top: 18%;
 	padding-bottom: 18%;
@@ -2049,7 +2048,6 @@ input[type="checkbox"]:checked + label::before {
 
 .prevyou p:first-child{
 	font-size: 12px;
-	color: aqua;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
@@ -2063,6 +2061,22 @@ input[type="checkbox"]:checked + label::before {
 	margin-top: 2.7%;
 }
 
+@media screen and (max-width:768px){
+	.prevyou p:last-child{
+		font-size: 40px;
+		line-height: 65px;
+	}
+	@media screen and (max-width:426px){
+		.prevyou p:first-child{
+			font-size: 9px;
+		}
+		.prevyou p:last-child{
+			font-size: 30px;
+			line-height: 45px;
+			width: 90%;
+		}
+	}
+}
 /*//////////////////////////////////////*/
 .post{
 	font-size: 16px;
@@ -2090,6 +2104,28 @@ input[type="checkbox"]:checked + label::before {
 	margin-top: 1%;
 }
 
+@media screen and (max-width:1024px){
+	.post img:nth-child(3),
+	.img_fool{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	.post p{
+		width: 80%;
+	}
+	@media screen and (max-width:426px){
+		.post{
+			font-size: 13px;
+			line-height: 28px;
+		}
+		.post p{
+			width: 90%;
+		}
+	}
+}
+
 /*////////////////////////////////*/
 .post_01 img:first-child{
 	float: right;
@@ -2097,6 +2133,8 @@ input[type="checkbox"]:checked + label::before {
 	margin-left: 4%;
 	margin-bottom: 1%;
 	margin-top: 8.5%;
+	width: 43%;
+	background-color: #ff4500;
 }
 
 .post_01 p{
@@ -2118,6 +2156,14 @@ input[type="checkbox"]:checked + label::before {
 	margin-bottom: 3%;
 }
 
+@media screen and (max-width:1024px){
+	.post_01 img:first-child{
+		margin-right: 5%;
+	}
+	.post_01 p{
+		width: 80%;
+	}
+}
 /*/Share//////////////////////////////////////*/
 .Share{
 	margin-top: .5%;
@@ -2169,15 +2215,143 @@ input[type="checkbox"]:checked + label::before {
 	margin-top: 9%;
 }
 
+@media screen and (max-width:1024px){
+	.Share_box{
+		width: 83%;
+	}
+	.Share p{
+		margin-left: 10%;
+	}
+}
 /*/comments//////////////////////////////////*/
 .comments{
-
+	background-color: #f6f6f9;
+	margin-top: 4%;
+	margin-bottom: .5%;
+	padding-bottom: 3%;
 }
 
 .comments_title{
 	font-size: 18px;
 	letter-spacing: 2px;
-	color: /*#070623*/ #21a657;
+	color: #070623;
 	font-weight: 600;
 	text-transform: uppercase;
+	margin-top: 4.5%;
+	margin-left: 16%;
+}
+
+.comments_box, .comments_forms{
+	width: 68%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4.5%;
+	position: relative;
+}
+
+.comments_box img{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.comments_box p{
+	margin-left: 12.7%;
+}
+
+.comments_name{
+	font-size: 14px;
+	color: #070623;
+	font-weight: 600;
+	padding-top: 1%;
+	display: block;
+}
+
+.comment_date{
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #3b3a52;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 1%;
+}
+.blue{
+	color: #47859f;
+	font-weight: 700;
+	margin-left: 2.5%;
+}
+
+.comment_text{
+	font-size: 16px;
+	line-height: 32px;
+	color: #070623;
+	font-weight: 400;
+	margin-top: 1%;
+}
+
+.comm_title_02{
+	margin-top: 6.4%;
+}
+
+.comments_forms{
+	margin-top: 2%;
+}
+
+.comments_forms textarea, .comments_forms input, .comments_forms button{
+	background:none;
+	border-radius: 4px;
+	border: 2px solid #c7c7cf;
+	outline: none;
+	height: 57px;
+	padding-left: 2.5%;
+	font-size: 14px;
+	letter-spacing: 0px;
+	color: #3b3a52;
+	font-weight: 500;
+	transition: border .5s, color .5s linear;
+}
+
+.comments_forms textarea{
+	height: 81px;
+	width: 100%;
+	padding-top: 3%;
+	margin-bottom: 3.5%;
+}
+
+.comments_forms input{
+	width: 33%;
+	margin-right: 3%;
+}
+
+.comments_forms textarea:hover, .comments_forms input:hover,
+.comments_forms textarea:focus, .comments_forms input:focus{
+	border: 2px solid #3b3a52;
+}
+
+.comments_forms button{
+	width: 26.5%;
+	padding-left: 0;
+	text-align: center;
+	background-color: #3b3a52;
+	color: #ffffff;
+	border: 2px solid #3b3a52;
+}
+.comments_forms button:hover{
+	background: none;
+	color: #3b3a52;
+	border: 2px #3b3a52 solid;
+}
+
+@media screen and (max-width:1024px){
+	.comments_box, .comments_forms{
+		width: 80%;
+	}
+	.comments_title{
+		margin-left: 10%;
+	}
+	@media screen and (max-width:768px){
+		.comments_box p{
+			margin-left: 18%;
+		}
+	}
 }
