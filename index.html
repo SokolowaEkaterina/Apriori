@@ -17,9 +17,9 @@
                     <nav class="home_nav">
                         <div class="navigation">
                             <ul>
-                                <li><a href="#">about us</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">work</a></li>
+                                <li><a href="#about_us" onclick="slowScroll('#about_us')">about us</a></li>
+                                <li><a href="#services" onclick="slowScroll('#services')">services</a></li>
+                                <li><a href="#work" onclick="slowScroll('#work')">work</a></li>
                                 <li><a href="blog.html">blog</a></li>
                                 <li><a href="contact_us.html">contact us</a></li>
                             </ul>
@@ -33,9 +33,9 @@
                         <div id="mobile-nav" class="mobile-nav">
                             <ul class="mobile_nav__list">
                                 <li class="mobile_nav__item"><a href="index.html" class="mobile_nav__link">home</a></li>
-                                <li class="mobile_nav__item"><a href="#" class="mobile_nav__link">about us</a></li>
-                                <li class="mobile_nav__item"><a href="#" class="mobile_nav__link">services</a></li>
-                                <li class="mobile_nav__item"><a href="#" class="mobile_nav__link">work</a></li>
+                                <li class="mobile_nav__item"><a href="#about_us" class="mobile_nav__link" onclick="slowScroll('#about_us')">about us</a></li>
+                                <li class="mobile_nav__item"><a href="#" class="mobile_nav__link" onclick="slowScroll('#services')">services</a></li>
+                                <li class="mobile_nav__item"><a href="#" class="mobile_nav__link" onclick="slowScroll('#work')">work</a></li>
                                 <li class="mobile_nav__item"><a href="blog.html" class="mobile_nav__link">blog</a></li>
                                 <li class="mobile_nav__item"><a href="contact_us.html" class="mobile_nav__link">contact us</a></li>
                             </ul>
@@ -66,7 +66,7 @@
             </div>
         </div>
 
-        <div class="our_story">
+        <div class="our_story" id="about_us">
             <div class="container">
                 <img src="img/home/pic_1.png" alt="">
                 <h2>Our story</h2>
@@ -78,7 +78,7 @@
             </div>
         </div>
 
-        <div class="why_us">
+        <div class="why_us" id="services">
             <div class="container">
                 <h2>Why us</h2>
                 <p class="after_h2">Lorem ipsum dolor sit amet,
@@ -114,7 +114,7 @@
                 </p>
                 
                 <div class="box_news">
-                    <a href="#">
+                    <a href="eror.html">
                         <div class="box_little_bigger">
                             <p class="deit">Disign 20 Dec 2019</p>
                             <p>The difference between B2B and B2C</p>
@@ -124,7 +124,7 @@
                         </div>
                     </a>
 
-                    <a href="#">
+                    <a href="post.html">
                         <div class="box_little box_news_img">
                             <p class="deit">Disign 20 Dec 2019</p>
                             <p>How to optimize the payment process on your next eCommerce
@@ -135,7 +135,7 @@
                         </div>
                     </a>
 
-                    <a href="#">
+                    <a href="post.html">
                         <div class="box_little">
                             <p class="deit">Disign 20 Dec 2019</p>
                             <p>Why your business needs a website</p>
@@ -148,7 +148,7 @@
             </div>
         </div>
 
-        <div class="work">
+        <div class="work" id="work">
             <div class="container">
                 <div class="box_work">
                     <div class="box_work_little">
@@ -408,5 +408,6 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>

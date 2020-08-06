@@ -1911,7 +1911,7 @@ iframe{
 .name:hover, .email:hover, .contact_forms textarea:hover,:focus{
 	border: 2px solid #3b3a52;
 }
-textarea:focus{
+.contact_forms textarea:focus{
 	border: 2px solid #3b3a52;
 }
 .contact_forms textarea{
@@ -2137,6 +2137,10 @@ input[type="checkbox"]:checked + label::before {
 	background-color: #ff4500;
 }
 
+.img_for_mob_{
+	display: none;
+}
+
 .post_01 p{
 	width: 68%;
 	font-size: 16px;
@@ -2162,6 +2166,23 @@ input[type="checkbox"]:checked + label::before {
 	}
 	.post_01 p{
 		width: 80%;
+	}
+	@media screen and (max-width:426px){
+		.post_01 img:first-child{
+			display: none;
+		}
+		.img_for_mob_{
+			display: block;
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 5%;
+		}
+		.post_01 p{
+			font-size: 13px;
+			line-height: 28px;
+			width: 90%;
+		}
 	}
 }
 /*/Share//////////////////////////////////////*/
@@ -2221,6 +2242,18 @@ input[type="checkbox"]:checked + label::before {
 	}
 	.Share p{
 		margin-left: 10%;
+	}
+	@media screen and (max-width:426px){
+		.Share_box a{
+			height: 35px;
+		}
+		.Share_box img{
+			margin-top: 13%;
+		}
+		.Share_box{
+			margin-top: 5%;
+			margin-bottom: 8%;
+		}
 	}
 }
 /*/comments//////////////////////////////////*/
@@ -2354,4 +2387,45 @@ input[type="checkbox"]:checked + label::before {
 			margin-left: 18%;
 		}
 	}
+	@media screen and (max-width:426px){
+		.comments_box{
+			width: 90%;
+		}
+		.comments_box p{
+			margin-left: 0;
+		}
+		.comments_box img{
+			width: 15%;
+		}
+		.comments_name,
+		.comment_date{
+			padding-left: 20%;
+		}
+		.comment_text{
+			margin-top: 8%;
+			
+			font-size: 13px;
+			line-height: 28px;
+		}
+		.comm_title_02{
+			margin-top: 15%;
+		}
+		.comments_forms{
+			margin-top: 5%;
+		}
+		.comments_forms input, .comments_forms button{
+			width: 100%;
+			margin-bottom: 3.5%;
+		}
+	}
 }
+
+a:active, a:focus { outline: none; border: none; }
+input, textarea { outline: none;  border: none; }
+input:active, textarea:active {outline: none;  border: none; }
+:focus {outline:none;  border: none; }
+textarea {resize:none;  border: none; }
+textarea {resize:vertical;  border: none; }
+textarea {resize:horizontal;  border: none; }
+button:active, button:focus {outline:none;  border: none; }
+button::-moz-focus-inner {border: 0;  border: none; }

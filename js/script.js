@@ -37,3 +37,12 @@ menuToggle.onclick = function(){
     menuToggle.classList.toggle('menu-icon-active');
     mobileNavContainer.classList.toggle('mobile-nav--active'); 
 }
+
+/*//ПЛАВНЫЙ ПЕРЕХОД ПО ССЫЛКАМ///////////////////////////////////////////////////////////////*/
+    function slowScroll(id) { 
+        var offset = 0;
+        $('html, body').animate({ 
+             scrollTop: $(id).offset().top - offset 
+        }, 1000);
+        return false; 
+    } 
