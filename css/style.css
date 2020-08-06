@@ -1940,6 +1940,7 @@ label{
 	margin-left: 24%;
 	margin-top: 5%;
 	position: relative;
+	cursor: pointer;
 }
 
 label::before{
@@ -1954,6 +1955,7 @@ label::before{
 	margin-right: 5%;
 	border-radius: 4px;
 	transition: background-color .2s linear;
+	cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label::before {
