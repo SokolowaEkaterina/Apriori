@@ -1,8 +1,8 @@
 /*ACORDION////////////////////////////////////////////*/
 $(document).ready(function() {
     $('.accordion-item-trigger').click(function(){
-        /*$(this).next('.accordion-item-content').slideToggle(200);*/
-        $(this).parent('.accordion-item').toggleClass('accordion-item--active');
+        $(this).next('.accordion-item-content').slideToggle(200);
+        $(this).parent('.accordion-item').toggleClass('accordion-item--active');//
     });
 });
 
