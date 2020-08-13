@@ -75,11 +75,11 @@ a {
 	text-decoration: none;
 }
 
-.backg_img{
-	background-image: url(../post_fool.jpg);
+/*.backg_img{
+	background-image: url(../home.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
-}
+}*/
 
 
 .container{
@@ -458,7 +458,8 @@ h1{
 	display: block;
 	position: absolute;
 	top: -160px;
-	left:30%;
+	left:50%;
+	margin-left: -65px;
 	width: 130px;
 	height: 130px;
 	border-radius: 50%;
@@ -503,7 +504,6 @@ h1{
 	.img_before::before,
 	.img_before_2::before,
 	.img_before_3::before{
-		left: 35%;
 		top: -140px;
 	}
 	.box_why_little{
@@ -522,11 +522,6 @@ h1{
 		.why_us .box_why_little:last-child{
 			margin-bottom: 15%;
 		}
-		.img_before::before,
-		.img_before_2::before,
-		.img_before_3::before{
-			left: 33%;
-		}
 		
 		.box_why_little p{
 			width: 90%;
@@ -535,11 +530,6 @@ h1{
 	@media screen and (max-width:375px){
 		.why_us .after_h2{
 			margin-bottom: 30%;
-		}
-		.img_before::before,
-		.img_before_2::before,
-		.img_before_3::before{
-			left: 30%;
 		}
 	}
 }
@@ -1181,12 +1171,16 @@ footer{
 	margin-bottom: 15%;
 }
 
+.footer_li{
+	display: block;
+	margin-bottom: 5%;
+}
+
 .box_footer_little a{
 	font-size: 14px;
 	line-height: 26px;
 	color: #070623;
 	font-weight: 500;
-	margin-bottom: 5%;
 	transition: color .3s linear;
 }
 
@@ -1776,6 +1770,13 @@ li button{
 }
 .tel_befor_01::before{
 	background-image: url(../img/contact_us/3.png);
+}
+
+.email_befor_01:hover,
+.tel_befor_01:hover,
+.mail_before_02:hover,
+.tell_before_02:hover{
+	color: #21a657;
 }
 
 @media screen and (max-width:768px){
